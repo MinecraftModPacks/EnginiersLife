@@ -17,7 +17,6 @@ RUN mv EL-Serverpack-2.03 server
 WORKDIR /root/server
 
 RUN echo "eula=true" > eula.txt
-#RUN sed "s/eula=.*/eula=true/g" eula.txt > eula.txt
 RUN chmod +x LaunchServer.sh
 
 ENTRYPOINT ["./LaunchServer.sh"]
